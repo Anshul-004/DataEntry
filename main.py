@@ -3,14 +3,14 @@
 from datetime import datetime
 import os
 
-print("Enter SPO2 level : ")
-a=input()
+print("Enter Your Name : ")
+name=input()
 
-print("Enter Pulse level : ")
-b=input()
+print("Enter Your Weight : ")
+weight=input()
 
 now = str(datetime.now().strftime('%Y-%m-%d %H:%M:%S')) #returns dateandtime
 
 
-f = open("logfile.txt", "a")
-f.write(now+ "\t\t" +"SPO2 :"+a+"\t"+"Pulse :"+b+"\n")
+f = open("weightlogs.txt", "a")
+f.write(now+ "\t\t" +"Name : "+name+"\t"+"Weight : "+weight+"\n")
